@@ -17,6 +17,31 @@
         }
     </style>
 </head>
+<!-- Botão de Pulo -->
+<button id="jumpButton">⭡</button>
+
+<style>
+    /* Estilo do botão */
+    #jumpButton {
+        position: absolute;
+        bottom: 50px; /* Distância do rodapé */
+        right: 20px; /* Distância da lateral direita */
+        width: 70px; /* Largura do botão */
+        height: 70px; /* Altura do botão */
+        background-color: red; /* Cor do botão */
+        color: white; /* Cor do ícone */
+        font-size: 30px; /* Tamanho do ícone */
+        border: none; /* Sem borda */
+        border-radius: 50%; /* Torna o botão redondo */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+        cursor: pointer; /* Cursor de clique */
+    }
+
+    /* Efeito ao pressionar */
+    #jumpButton:active {
+        background-color: darkred;
+    }
+</style>
 <body>
     <h1>Jogo de Desviar Obstáculos</h1>
     <p>Pressione <strong>ESPAÇO</strong> para pular!</p>
