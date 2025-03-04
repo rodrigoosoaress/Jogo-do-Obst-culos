@@ -18,7 +18,7 @@ const relogioImg = new Image();
 relogioImg.src = "relogio.png"; // Ícone do relógio
 
 // Configuração do jogador
-let player = { x: 50, y: 220, width: 40, height: 40, dy: 0, gravity: 0.2, jumpPower: -10 };
+let player = { x: 50, y: 220, width: 40, height: 40, dy: 0, gravity: 0.3, jumpPower: -10 };
 let isJumping = false;
 
 // Configuração do obstáculo
@@ -107,5 +107,12 @@ document.addEventListener("keydown", (event) => {
     if (event.code === "Space" && !isJumping) {
         player.dy = player.jumpPower;
         isJumping = true;  
+    }
+});
+// Botão de pulo para celular e PC
+document.getElementById("jumpButton").addEventListener("click", () => {
+    if (!isJumping) {
+        player.dy = player.jumpPower;
+        isJumping = true;
     }
 });
